@@ -1,32 +1,97 @@
-link rel="sheet"hef="sye.ss">
-</ad>
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <title>Akademi Monitoring PKL</title>
+  <meta name="description" content="Sistem monitoring dan evaluasi Praktek Kerja Lapangan (PKL). Pantau kehadiran, jurnal, dan perkembangan siswa PKL secara real-time.">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
 <body>
-  <sco cl="ogscrn" ="lgncrn ar-labl=Muk kRua PKL"><v ss="log-">  <dv lss="bd">    <div ass="bad-mark" aria-iddn="tue">PKL</dv>    <di><dv clas="rand-nam">Akadem Moirng PKL</d><dv c="rndu">Mniorg &am;evauas</i></dv>  </d>
-      <v css="conxpy">    <pn clss="textkick">SsemMntog PKL</s>
-      <h>Rung kja prakk yag b erara.</h1>    <>Pau pros, aat kit,ti lanju erkemna PKL  ruag ej sesui anmu.</p>
-      </v>
-      <iv cs="p"><stong>Mska</r>Akun dan daa imn di Frebase</div>
-    </div><fom cls="lonl" i="lgF">
-      <h2>Muk k u krja</h2>   <pcss="onr">Guaka ma dan kaa nd akun ya dibik lhadmirto.</>  <v css="ogfld"><labl fo="loinEmil">Eml</la><u id="loiEmil" m="m" ye="emal" auompee="unam" equied></v>   <divclss="lgi-fild"><lael fo="lgiPasswor">Kt d</lbl><ipu idgPsswod" me="psw" y="pswr" auompete="cussword" mlgh="6" rquied></div><pclss="lgifedbck"="giF" le="stats" i-live="plie" hddn></>  <bonclas="but lon-umit" id="Sumi" ye="ubmt">Msk< iahidn="tue">→</s></button>  <btton ss="oir" id="esetPssw" typ="butn">Luakatasnd?</butto>  < css="lonfooo">Blummemikiun? Huungi msrar PKL.</p></rm></i>
-<divclas="pp-shll" ="appSell"da-canvas-ol="" ie>
-  <aecass="sd" -be="Navai m">  <div ss="bad">   <div ass="bnd-mak" ariahdde="ru">PKL</dv>    <dv><v css="brdna">Akdm MniorPKL</v><i clss="badub">Ming &amp; vlai</div></div>  </i>   <pclass="sdlae">Rug krja</p>   <navclss="vls" ="sdeNav"></av>
-<v cs="d">    <dvass="accn-ne"><trng>Aku akf</sog><n id="soSuy">Da trubung k Frbas.</></dv>    <vss="src"><v cl="avtr" d="uAva">—</v><i><d ss="usam" d="Nam">Pnggun</dv><v css="usrro" d="uRl">Blum msuk</div></iv></v>  </di>
-    </sie><ti clss="wksc">  <ha clss="tpb">    <v clas="moi-bran"><sn lass="brand-mark" aria-hdden="ue">PKL</pa> Akademi Mniring PKL</iv>    <v css="cub">Skah / <b id="crbCurn">Rks</></div>    <div clas="op-cos"><slass="ty" id="dtNw"></sp>< cls="eridtg"id="eiodTa">PERIODEBELUMDIATUR<pan><but yp="buon" css="gutbt"daction="ogot">Ku</bu></dv>
-      </dr>  < css="m e-cans" id="ainCon" tabnd="-1"></main>  <nav lass="mbilnav" ="mobeNv" aab="Nvs cp"></nav></sti>
-  </v>
+  <section class="login-screen" id="loginScreen" aria-label="Masuk ke Ruang PKL">
+    <div class="login-context">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">PKL</div>
+        <div><div class="brand-name">Akademi Monitoring PKL</div><div class="brand-sub">Monitoring & evaluasi</div></div>
+      </div>
+      <div class="context-copy">
+        <span class="context-kicker">Sistem Monitoring PKL</span>
+        <h1>Ruang kerja praktik yang lebih terarah.</h1>
+        <p>Pantau proses, catat kegiatan, dan tindak lanjuti perkembangan PKL dari ruang kerja sesuai peranmu.</p>
+      </div>
+      <div class="context-period"><strong>Masuk aman</strong>Akun dan data tersimpan di Firebase.</div>
+    </div>
+    <form class="login-panel" id="loginForm">
+      <h2>Masuk ke ruang kerja</h2>
+      <p class="login-intro">Gunakan email dan kata sandi akun yang diberikan oleh administrator.</p>
+      <div class="login-field"><label for="loginEmail">Email</label><input id="loginEmail" name="email" type="email" autocomplete="username" required></div>
+      <div class="login-field"><label for="loginPassword">Kata sandi</label><input id="loginPassword" name="password" type="password" autocomplete="current-password" minlength="6" required></div>
+      <p class="login-feedback" id="loginFeedback" role="status" aria-live="polite" hidden></p>
+      <button class="button login-submit" id="loginSubmit" type="submit">Masuk <span aria-hidden="true">→</span></button>
+      <button class="login-reset" id="resetPassword" type="button">Lupa kata sandi?</button>
+      <p class="login-footnote">Belum memiliki akun? Hubungi administrator PKL.</p>
+    </form>
+  </section>
 
-  <iv s="mlbckr"d="jouralMoal" idden><scocss="moda" rol="dio" aamdal="ru" rialally="Ttl">   <divclass="mod">
-       <div>< id="odlT">Kijurn arin</h2><>Catt keataPKLhi ini nuk injaumbim.</></div>    <class="cls-utt" aa="cosmoal" aalabl="Tuu ormulir">×</butt>
-      </dv>
-      <fom id="julFm">    <v css="form-d">
-          <iv class="fom-fel"><bl for="jrlDe">Tang keaa</labl><utid="junalDate" name="at" ye="date"requred></i>      <dv cs="formfe"><lael f="jurnalHrs">Drasi kgata</label><selt id="jurnaHus" nme="hours" erd><opival="">Pilih drasi</opon><opi>4 jam</op><opon>6ja</opo><tin>8 j</opi></selec></dv>      <dv clss="fr-flfull"><lalf="jrlAtivy">Uaa ka</lel><texta i="jorlAty" me="avt" plehle="Ayangkm kerjkan aajarh ?" rqurd ln="12"></xt><ancls="m-hlp>Tuls mnimal 12 kaakt.</p></v>      <div cls="frm-fild full"><lal ="jralProo">Reenbukti opsoal</lbel><inpt i="jurlPof" me="pf" tye="text" lachl="Nm doumenau ata intal"></i>    </di>    <iv class="fm-foot"><buttn cs="button sndry" ty="bu"da-acto="sel">Btal</butt><buton clas="butt" yp="subm">Ki unuk diinju</butto></div>
-      </>
-    </tin></div>
+  <div class="app-shell" id="appShell" data-canvas-role="" hidden>
+    <aside class="sidebar" aria-label="Navigasi utama">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">PKL</div>
+        <div><div class="brand-name">Akademi Monitoring PKL</div><div class="brand-sub">Monitoring & evaluasi</div></div>
+      </div>
+      <p class="side-label">Ruang kerja</p>
+      <nav class="nav-list" id="sideNav"></nav>
+      <div class="sidebar-bottom">
+        <div class="account-note"><strong>Akun aktif</strong><span id="sessionSummary">Data terhubung ke Firebase.</span></div>
+        <div class="user-chip"><div class="avatar" id="userAvatar">—</div><div><div class="user-name" id="userName">Pengguna</div><div class="user-role" id="userRole">Belum masuk</div></div></div>
+      </div>
+    </aside>
 
-<vclass="malbackdr"="ordMod" hn><ecicas="mda" ole="dilog" aiaodal="ru" alabelledby="recrdMdalTil">   <divclass="odalh">
-        <v><hid="rcordModTtl">Tambah daa</h2><p id="rdModlDescipion">Lngkapi inrma brikut.</></div>    <bu css="cseun" datacto="clserc" ab="Tutp foul">×</butto>  </v>  < d="rcoFr">     <divclass="gr"id="rcordFrmFlds"></dv>     <divclass="ootr"><button cass="btnnday"yp="bun"atacto="close-ro">Btl</butto><butt clas="uttn" id="coSbt"yp="ubm">Smpn</butto></dv>  </></c>
-</div>
-<iv clss="tost" i="ta" rl="tau" lv="poli" hdn></v>
-<scripttype="ue" src="pp.js"></sipt>
-</bdy>
-</tm>
+    <section class="workspace">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark" aria-hidden="true">PKL</span> Akademi Monitoring PKL</div>
+        <div class="crumb">Sekolah / <b id="crumbCurrent">Ringkasan</b></div>
+        <div class="top-actions"><span class="today" id="dateNow"></span><span class="period-tag" id="periodTag">PERIODE BELUM DIATUR</span><button type="button" class="logout-button" data-action="logout">Keluar</button></div>
+      </header>
+      <main class="main role-canvas" id="mainContent" tabindex="-1"></main>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Navigasi cepat"></nav>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="journalModal" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <div><h2 id="modalTitle">Kirim jurnal harian</h2><p>Catat kegiatan PKL hari ini untuk ditinjau pembimbing.</p></div>
+        <button class="close-button" data-action="close-modal" aria-label="Tutup formulir">×</button>
+      </div>
+      <form id="journalForm">
+        <div class="form-grid">
+          <div class="form-field"><label for="journalDate">Tanggal kegiatan</label><input id="journalDate" name="date" type="date" required></div>
+          <div class="form-field"><label for="journalHours">Durasi kegiatan</label><select id="journalHours" name="hours" required><option value="">Pilih durasi</option><option>4 jam</option><option>6 jam</option><option>8 jam</option></select></div>
+          <div class="form-field full"><label for="journalActivity">Uraian kegiatan</label><textarea id="journalActivity" name="activity" placeholder="Apa yang kamu kerjakan dan pelajari hari ini?" required minlength="12"></textarea><span class="form-help">Tulis minimal 12 karakter. Hindari membagikan data sensitif.</span></div>
+          <div class="form-field full"><label for="journalProof">Referensi bukti (opsional)</label><input id="journalProof" name="proof" type="text" placeholder="Nomor dokumen atau tautan internal"><span class="form-help">Jangan masukkan informasi rahasia perusahaan.</span></div>
+        </div>
+        <div class="form-footer"><button class="button secondary" type="button" data-action="close-modal">Batal</button><button class="button" type="submit">Kirim untuk ditinjau</button></div>
+      </form>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="recordModal" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="recordModalTitle">
+      <div class="modal-head">
+        <div><h2 id="recordModalTitle">Tambah data</h2><p id="recordModalDescription">Lengkapi informasi berikut.</p></div>
+        <button class="close-button" data-action="close-record" aria-label="Tutup formulir">×</button>
+      </div>
+      <form id="recordForm">
+        <div class="form-grid" id="recordFormFields"></div>
+        <div class="form-footer"><button class="button secondary" type="button" data-action="close-record">Batal</button><button class="button" id="recordSubmit" type="submit">Simpan</button></div>
+      </form>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
